@@ -54,8 +54,6 @@ scene.on("update", e => {
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
-console.log(delay);
-
   video.currentTime = delay;
-}, 33.3);
+}, 35.3);
 //divide 1000 / FPS = 1000 / 30 = 33.3

@@ -5,7 +5,6 @@ const text = intro.querySelector("h1");
 const section = document.querySelector("section");
 const end = section.querySelector("h1");
 
-
 const updateVideoSrc = () => {
  window.addEventListener('resize' , () => {
   const screenWidth = window.innerWidth
@@ -55,6 +54,8 @@ scene.on("update", e => {
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
+console.log(delay);
+
   video.currentTime = delay;
 }, 33.3);
 //divide 1000 / FPS = 1000 / 30 = 33.3
